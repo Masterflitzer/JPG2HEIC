@@ -35,5 +35,5 @@ for x in *.JPG; do
 done
 ```
 
-#### forked from fotock
+### forked from fotock
 https://github.com/fotock/jpg2heic
