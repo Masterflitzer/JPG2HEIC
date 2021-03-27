@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for X in *.jpg; do
     WO_JPG="${X%.jpg}"
     NEW="${WO_JPG}.heic"
