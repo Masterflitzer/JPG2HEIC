@@ -1,7 +1,7 @@
 # JPG2HEIC
 Bulk convert JPG images to HEIC/HEIF with metadata in Bash.
 
-### Preparation
+### Installation
 
 ```bash
 apt install exiftool imagemagick
