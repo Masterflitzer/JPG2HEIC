@@ -2,7 +2,7 @@
 
 for x in *.jpg; do
     echo "$x"
-    magick "$x" "${x%.jpg}.heic"
+#    magick "$x" "${x%.jpg}.heic"
     exiftool -overwrite_original -tagsFromFile "$x" -all:all "${x%.jpg}.heic"
 
     XMP="${x%.jpg}.XMP"
@@ -11,10 +11,9 @@ for x in *.jpg; do
     fi  
 done
 
-
 for x in *.JPG; do
     echo "$x"
-    magick "$x" "${x%.JPG}.heic"
+#    magick "$x" "${x%.JPG}.heic"
     exiftool -overwrite_original -tagsFromFile "$x" -all:all "${x%.JPG}.heic"
 
     XMP="${x%.JPG}.XMP"
