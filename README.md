@@ -1,5 +1,5 @@
-# jpg2heic
-Bulk convert jpg images to HEIC/HEIF with metadata in Bash.
+# JPG2HEIC
+Bulk convert JPG images to HEIC/HEIF with metadata in Bash.
 
 ### Preparation
 
