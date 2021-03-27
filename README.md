@@ -1,11 +1,10 @@
 # jpg2heic
 Bulk convert jpg images to HEIC/HEIF with metadata in Bash.
 
-### Preinstall
+### Preparation
 
 ```bash
-brew install exiftool
-brew install imagemagick
+apt install exiftool imagemagick
 ```
 
 ### Script
@@ -14,7 +13,7 @@ brew install imagemagick
 
 for x in *.jpg; do
     echo "$x"
-    magick "$x" "${x%.jpg}.heic"
+#    magick "$x" "${x%.jpg}.heic"
     exiftool -overwrite_original -tagsFromFile "$x" -all:all "${x%.jpg}.heic"
 
     XMP="${x%.jpg}.XMP"
@@ -26,7 +25,7 @@ done
 
 for x in *.JPG; do
     echo "$x"
-    magick "$x" "${x%.JPG}.heic"
+#    magick "$x" "${x%.JPG}.heic"
     exiftool -overwrite_original -tagsFromFile "$x" -all:all "${x%.JPG}.heic"
 
     XMP="${x%.JPG}.XMP"
@@ -36,8 +35,5 @@ for x in *.JPG; do
 done
 ```
 
-#### Blog
-https://mikebeach.org/2019/09/02/bulk-convert-jpg-to-heic-with-metadata
-
-### License
-MIT License
+#### forked from fotock
+https://github.com/fotock/jpg2heic
