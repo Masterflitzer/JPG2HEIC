@@ -11,7 +11,6 @@ for x in *.jpg; do
     fi  
 done
 
-
 for x in *.JPG; do
     echo "$x"
     magick "$x" "${x%.JPG}.heic"
